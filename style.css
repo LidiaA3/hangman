@@ -116,3 +116,8 @@ p{
 .btn_pop:hover{
   background-color: #20274A;
 }
+@media screen and (max-width: 480px){
+  .zona_juego{
+    padding: 5px 100px;
+  }
+}
