@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+    <link rel="shortcut icon" href="imgs/logo-propio-gris.svg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <meta name="description" content="The classical hangman game.">
+    <meta property="og:title" content="Hangman">
+    <meta property="og:description" content="The classical hangman game.">
+    <meta property="og:image" content="imgs/logo-propio-gris.svg">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container1">
+          <div class="graphicContainer">
+            <h1>Hangman</h1>
+            <svg height="400px" width="300px" class="graphic">
+              <line x1="50" y1="350" x2="150" y2="350" />
+              <line x1="100" y1="350" x2="100" y2="50" />
+              <line x1="100" y1="52" x2="170" y2="52" />
+              <line x1="170" y1="50" x2="170" y2="90" />
+              <circle cx="171" cy="113" r="22" id="head" />
+              <line x1="170" y1="134" x2="170" y2="210" id="body"/>
+              <line x1="170" y1="170" x2="145" y2="150" id="rightArm"/>
+              <line x1="170" y1="170" x2="195" y2="150" id="leftArm"/>
+              <line x1="170" y1="210" x2="145" y2="230" id="rightLeg"/>
+              <line x1="170" y1="210" x2="195" y2="230" id="leftLeg"/>
+            </svg>
+          </div>
+
+          <div class="wrongLettersContainer">
+            <h3>Wrong Letters :</h3>
+            <div class="wrongLetters" id="wrongWordArea">none</div>
+          </div>
+      </div>
+
+      <div class="container2">
+        <div class="zona_juego">
+          <input type="text" placeholder="Letter" id="valor" value=""><br>
+          <button onclick="validar()" id="my_btn">Validar</button>
+          <div id="wordSection">none</div>
+        </div>
+      </div>
+    </div>
+
+    <div id="wonPopUp">
+      <h2>Congratulations!!!</h2>
+      <p>You won</p>
+      <button class="btn_pop" onclick="location.reload()">New Game</button>
+    </div>
+
+    <div id="lostPopUp">
+      <h2>Defeat!!!</h2>
+      <p>True Word: <span id="tWord"></span></p>
+      <button class="btn_pop" onclick="location.reload()">Restart</button>
+    </div>
+    <!--script src="jugar.js"></script-->
+  </body>
+</html>
