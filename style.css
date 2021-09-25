@@ -118,6 +118,9 @@ p{
 }
 @media screen and (max-width: 480px){
   .zona_juego{
-    padding: 5px 100px;
+    padding: 5px 75px;
+  }
+  .graphic{
+    transform: scale(0.8);
   }
 }
