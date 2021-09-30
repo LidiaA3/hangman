@@ -20,8 +20,9 @@ body{
 }
 .container2{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .graphicContainer{
   width: 50%;
@@ -38,7 +39,7 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px 200px;
+  padding: 5px 75px 25px 75px;
   background-color: white;
   color: #323E75;
   border-radius: 5px;
@@ -52,9 +53,14 @@ body{
 h1{
   float: right;
 }
-#my_btn{
+h2{
+  margin: 5px 0;
+  padding: 5px 0;
+  font-size: 20px;
+}
+.my_btn{
   width: 160px;
-  padding: 15px 0;
+  padding: 10px 0;
   border-radius: 5px;
   background-color: #663399;
   color: #fff;
@@ -63,16 +69,17 @@ h1{
   font-weight: 600;
   margin-bottom: 30px;
 }
-#my_btn:hover{
+.my_btn:hover{
   background-color: #441177;
 }
 input[type="text"]{
-  width: 90px;
+  width: 220px;
   font-weight: 600;
   padding: 10px 0;
   font-size: 28px;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 10px;
   border-radius: 5px;
   border: 2px solid #202020;
   color: #663399;
@@ -90,8 +97,9 @@ input[type="text"]{
   width: 500px;
   height: 350px;
   padding: 80px 60px;
-  color: #fff;
-  background-color: #879eff;
+  color: #663399;
+  background-color: #fff;
+  border: 2px solid #663399;
   border-radius: 5px;
   position: absolute;
   top: 50%;
@@ -106,26 +114,21 @@ p{
   font-size: 18px;
 }
 .btn_pop{
-  width: 100px;
-  height: 40px;
+  width: 150px;
+  height: 60px;
   border: none;
   border-radius: 5px;
-  background-color: #323E75;
+  background-color: #663399;
   color: white;
   font-size: 20px;
 }
 .btn_pop:hover{
-  background-color: #20274A;
+  background-color: #441177;
 }
-.letter{
+.wordSection{
   color: #663399;
-  display: inline-flex;
-  justify-content: center;
-  height: 30px;
-  width: 25px;
   align-items: center;
-  font-size: 20px;
-  border-bottom: 3px solid #663399;
+  font-size: 30px;
   margin: 0 3px;
   text-transform: uppercase;
 }
@@ -138,7 +141,8 @@ p{
 }
 @media screen and (max-width: 480px){
   .zona_juego{
-    padding: 5px 75px;
+    padding: 5px 30px;
+    margin: 20px 0;
     transform: none;
   }
   .graphic{

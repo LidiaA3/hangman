@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8">
     <title>Hangman</title>
@@ -34,28 +34,29 @@
 
           <div class="wrongLettersContainer">
             <h3>Wrong Letters :</h3>
-            <div class="wrongLetters" id="wrongWordArea">none</div>
+            <div class="wrongLetters" id="historial">none</div>
+            <div id="reset"></div>
           </div>
       </div>
 
       <div class="container2">
         <div class="zona_juego">
-          <input type="text" placeholder="Letter" id="valor" value=""><br>
-          <button onclick="validar()" id="my_btn">Validar</button>
-          <div id="wordSection">none</div>
+          <input type="text" placeholder="Letter" id="letra" value=""><br>
+          <button class="my_btn" id="boton">Validar</button>
+          <div class="wordSection" id="resultado">none</div>
         </div>
       </div>
     </div>
 
     <div id="wonPopUp">
       <h2>Congratulations!!!</h2>
-      <p>You won</p>
+      <p>Has ganado!!!</p>
       <button class="btn_pop" onclick="location.reload()">New Game</button>
     </div>
 
     <div id="lostPopUp">
-      <h2>Defeat!!!</h2>
-      <p>True Word: <span id="tWord"></span></p>
+      <h2>Ohhh!!!</h2>
+      <p>Palabra correcta: <span id="palabra"></span></p>
       <button class="btn_pop" onclick="location.reload()">Restart</button>
     </div>
     <script src="jugar.js"></script>
